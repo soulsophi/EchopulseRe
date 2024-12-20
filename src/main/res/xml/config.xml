@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<Robot type="FirstInspires-FTC">
+    <Webcam name="C270" serialNumber="24580580"/>
+    <LynxUsbDevice name="Control Hub Portal" serialNumber="(embedded)" parentModuleAddress="173">
+        <LynxModule name="Control Hub" port="173">
+            <LynxEmbeddedIMU name="imu" port="0"/>
+
+            <Servo name="rightV4B" port="0"/>
+            <Servo name="leftV4B" port="1"/>
+            <Servo name="pitchV4B" port="2"/>
+            <Servo name="pitchDeposit" port="3"/>
+            <Servo name="rightIntake" port="4"/>
+            <Servo name="leftIntake" port="5"/>
+
+
+
+            <goBILDA5202SeriesMotor name="frontRight" port="0"/>
+            <goBILDA5202SeriesMotor name="frontLeft" port="1"/>
+            <goBILDA5202SeriesMotor name="backRight" port="2"/>
+            <goBILDA5202SeriesMotor name="backLeft" port="3"/>
+
+            <DigitalDevice name="sliderLimit" port="1"/>
+            <DigitalDevice name="leftIntakeSensor" port="2"/>
+            <DigitalDevice name="rightIntakeSensor" port="3"/>
+
+        </LynxModule>
+    </LynxUsbDevice>
+    <LynxUsbDevice name="Expansion Hub Portal" serialNumber="DQ7HX75E" parentModuleAddress="1">
+        <LynxModule name="Expansion Hub" port="1">
+            <goBILDA5202SeriesMotor name="slider" port="0"/>
+            <goBILDA5202SeriesMotor name="rightLift" port="1"/>
+            <goBILDA5202SeriesMotor name="leftLift" port="2"/>
+            <goBILDA5202SeriesMotor name="intake" port="3"/>
+            <Servo name="plane" port="0"/>
+            <Servo name="rightDeposit" port="1"/>
+            <Servo name="leftDeposit" port="5 "/>
+            <Servo name="rightHang" port="3"/>
+            <Servo name="leftHang" port="4"/>
+            <DigitalDevice name="leftDepositSensor" port="0"/>
+            <DigitalDevice name="rightDepositSensor" port="1"/>
+
+        </LynxModule>
+    </LynxUsbDevice>
+</Robot>
